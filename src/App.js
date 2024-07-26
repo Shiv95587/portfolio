@@ -1,5 +1,7 @@
 import "./App.css";
 import profilePic from "./profile-pic.png";
+import pic2 from "./pic2.jpg";
+import pic3 from "./pic3.jpg";
 
 function App() {
   return (
@@ -41,7 +43,7 @@ function App() {
           <div className="container">
             <div className="hero-section-left">
               <h3 className="greeting">Hi I am</h3>
-              <h3 className="name">Shiv Kumar</h3>
+              <span className="name">Shiv Kumar</span>
               <h1 className="role">Full Stack Developer / ML Engineer</h1>
               <h5 className="description">
                 I'm Shiv Kumar, a computer science student at FAST University
@@ -52,10 +54,23 @@ function App() {
                 solutions.
               </h5>
             </div>
-            <div className="hero-section-right"></div>
+            <div className="hero-section-right">
+              <img src={pic2} />
+            </div>
           </div>
         </section>
       </header>
+
+      <main>
+        <section className="about-me">
+          <div className="container">
+            <div className="about-me-left">
+              <img src={pic3} className="pic3" />
+            </div>
+            <div className="about-me-right"></div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
