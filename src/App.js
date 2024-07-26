@@ -4,10 +4,10 @@ import pic2 from "./pic2.jpg";
 import pic3 from "./pic3-copy.jpg";
 import { useState } from "react";
 import Details from "./Details";
-import Service from "./Service.js";
+import Services from "./Services.js";
 
 function App() {
-  const [currentTab, setCurrentTab] = useState("");
+  const [currentTab, setCurrentTab] = useState("Skills");
   return (
     <div className="App">
       <header id="header">
@@ -76,7 +76,7 @@ function App() {
               <img src={pic3} className="pic3" alt="About Me" />
             </div>
             <div className="about-me-right">
-              <h1>About Me</h1>
+              <h2>About Me</h2>
               <p className="about-me-description">
                 I’m Shiv Kumar, a Computer Science student at FAST NUCES
                 Karachi. I’m passionate about web development, machine learning,
@@ -124,10 +124,10 @@ function App() {
                 </a>
               </div>
               <Details currentTab={currentTab} />
-              <Service />
             </div>
           </div>
         </section>
+        <Services />
       </main>
     </div>
   );

@@ -53,6 +53,10 @@ function Details({ currentTab }) {
             detailName={"2024 Jul - Present"}
             detailDescription={"Fellow @HeadStarter AI"}
           />
+          <SingleDetail
+            detailName={"2022 - Present"}
+            detailDescription={"Freelancer @Fiverr"}
+          />
         </ul>
       )}
     </div>

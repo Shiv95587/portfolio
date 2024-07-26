@@ -288,8 +288,8 @@ main {
   padding: 0 2rem; /* Optional: add padding */
 }
 
-.about-me-right h1 {
-  font-size: 4.4rem;
+.about-me-right h2 {
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
