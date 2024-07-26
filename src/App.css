@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  width: 1250px;
+  width: 1200px;
   margin: 0 auto;
   /* border: 2px solid red; */
 }
@@ -105,10 +105,17 @@ body {
 }
 
 .hero-section .container {
-  border: 2px solid red;
-  height: 100vh;
+  /* border: 2px solid red; */
+  /* height: 80vh; */
   display: flex;
   flex-direction: row;
+}
+
+.hero-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .hero-section-left {
@@ -117,8 +124,8 @@ body {
   /* align-items: center; */
   justify-content: center;
   flex: 1;
+
   margin: 0 1.6rem;
-  transform: translateY(-10%);
 }
 
 .hero-section-right {
@@ -136,12 +143,36 @@ body {
 }
 
 .hero-section-left .name {
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 2px;
   color: red;
-  transform: scale();
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Caret blinking effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 .hero-section-left .role {
@@ -152,5 +183,51 @@ body {
 .hero-section-left .description {
   font-weight: 400;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.hero-section-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.6rem;
+}
+
+.hero-section-right img {
+  width: 60%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 500px; /* Optional: set a maximum width */
+  border-radius: 15px; /* Rounded corners, if circular is not desired */
+  box-shadow: 0 0 8px 4px rgba(255, 0, 0, 0.2); /* Optional: subtle shadow for depth */
+}
+
+.hero-section .container {
+  transform: translateY(-25%);
+}
+
+.about-me {
+  height: 100vh;
+}
+.about-me .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me-left {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.about-me-right {
+  flex: 1; /* Take up remaining space */
+}
+
+.pic3 {
+  width: 100%; /* Make image responsive to container width */
+  height: 50%; /* Maintain aspect ratio */
+  max-width: 600px; /* Optional: set a maximum width */
+  border-radius: 15px; /* Rounded corners, if desired */
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
 }
