@@ -1,0 +1,17 @@
+.details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.single-detail h5 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: red;
+  margin-bottom: 0.1rem;
+}
+
+.single-detail p {
+  word-wrap: break-word;
+}
