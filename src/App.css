@@ -1,38 +1,156 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --clr: #222327;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #000;
+  color: #fff;
+  /* background-color: var(--clr); */
+}
+#header {
+  background-color: #000;
+  padding: 10px 0;
+  overflow: hidden;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.nav-elements a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-element::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  box-shadow: 0px 0 6px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-element:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-elements a:hover {
+  text-decoration: none;
+}
+
+.profile-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0 12px;
+  display: inline-block; /* Ensure the wrapper fits the content */
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 70px; /* Adjust size as needed */
+  height: 70px;
+  position: relative;
+  top: -12px; /* Adjust based on desired bending effect */
+  box-shadow: 0 0px 8px 4px rgba(193, 7, 7, 0.3); /* Shadow 10px down */
+}
+
+/* Pseudo-element to create a curve effect */
+.profile-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background: red;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px red;
+}
+
+.hero-section .container {
+  border: 2px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-section-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
+  margin: 0 1.6rem;
+  transform: translateY(-10%);
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section-right {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section-left .greeting {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.hero-section-left .name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  color: red;
+  transform: scale();
+}
+
+.hero-section-left .role {
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.hero-section-left .description {
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
