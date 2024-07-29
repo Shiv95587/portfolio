@@ -19,13 +19,17 @@ html {
 }
 
 body {
+  background-color: #080909a8;
   background-color: #000;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
-  /* background-color: var(--clr); */
 }
 
 main {
-  margin-top: 1.6rem;
+  /* margin-top: 1.6rem; */
 }
 
 .container {

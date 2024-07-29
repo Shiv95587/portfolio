@@ -1,6 +1,10 @@
 #projects {
   width: 100vw;
   height: 100vh;
+  background-color: #080909a8;
+
+  /* background-image: url("../grey_hexagons_on_black_background.jpg");
+  background-size: cover; */
 }
 
 .projects-header {

@@ -3,6 +3,9 @@
   display: flex;
   align-items: center; /* Center items vertically */
   padding: 0 2rem; /* Add horizontal padding for spacing */
+  /* background-image: url("../grey_hexagons_on_black_background.jpg");
+  background-size: cover; */
+  background-color: #080909a8;
 }
 
 .about-me .container {
