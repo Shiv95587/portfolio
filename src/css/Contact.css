@@ -1,0 +1,10 @@
+#contact {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
