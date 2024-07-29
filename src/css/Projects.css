@@ -1,0 +1,13 @@
+#projects {
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.all-projects {
+}

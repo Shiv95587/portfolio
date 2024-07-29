@@ -1,4 +1,4 @@
-import "./Details.css";
+import "../css/Details.css";
 import SingleDetail from "./SingleDetail";
 function Details({ currentTab }) {
   return (
