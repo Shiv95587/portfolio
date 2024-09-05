@@ -3,6 +3,7 @@ import Services from "./sections/Services.js";
 import Projects from "./sections/Projects.js";
 import Achievements from "./sections/Achievements.js";
 import Contact from "./sections/Contact.js";
+
 export default function Main({ currentTab, setCurrentTab }) {
   return (
     <main>

@@ -15,7 +15,9 @@ export default function Achievement({ achievementImage, achievementData }) {
             </span>
           )}
           {achievementData.competitionName && (
-            <p>{achievementData.competitionName}</p>
+            <p className="achievement-competition">
+              {achievementData.competitionName}
+            </p>
           )}
         </p>
       </div>

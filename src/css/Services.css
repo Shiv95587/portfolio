@@ -1,9 +1,6 @@
 #services {
   width: 100vw;
   height: 100vh;
-  background-color: #080909a8;
-  /* background-image: url("../grey_hexagons_on_black_background.jpg");
-  background-size: cover; */
 }
 
 .services-header {
@@ -35,11 +32,10 @@
   border-radius: 8px;
   background-color: #0a0a0a5d;
   border: 1px solid #f1f3f523;
-  /* box-shadow: 0 0px 6px 2px rgba(255, 255, 255, 0.2); */
 }
 
 .service:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   /* background: linear-gradient(#0a0a0a, #8f232396); */
   /* background: linear-gradient(to right, #b22222, #d3d3d3); */
   background: linear-gradient(red, #0a0a0a);
@@ -59,11 +55,9 @@
 }
 
 .service-description {
-  /* text-align: center; */
   height: 50%;
   font-size: 16px;
   font-weight: 500;
-  /* text-wrap: balance; */
   letter-spacing: 1px;
   line-height: 1.4;
   margin-bottom: 3rem;

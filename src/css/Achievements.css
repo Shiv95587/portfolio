@@ -4,7 +4,10 @@
   /* background-image: url("../grey_hexagons_on_black_background.jpg");
   background-size: cover; */
   /* background-color: #080909a8; */
-  background-color: #080909a8;
+  /* background-color: #080909a8; */
+}
+
+#achievements .container {
 }
 
 .achievements-header {
@@ -23,6 +26,8 @@
 
 .achievement {
   flex: 1;
+  width: 400px;
+  overflow: hidden;
   position: relative;
   border-radius: 8px;
   background-color: #0a0a0a5d;
@@ -55,13 +60,18 @@
 
 .achievement-name {
   display: none;
+  color: #000;
   text-align: center;
   margin-top: 4px;
 }
 
 .achievement:hover {
   box-shadow: 0 0px 6px 6px rgba(255, 0, 0, 0.2);
-  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.achievement:hover img {
+  transform: scale(1.1);
   transition: all 0.3s ease;
 }
 
@@ -78,10 +88,14 @@
 
 .achievement-position {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .parent-height {
   overflow: clip;
   height: inherit;
+}
+
+.achievement-competition {
+  font-weight: 500;
 }

@@ -1,36 +1,40 @@
 .about-me {
-  height: 100vh; /* Adjust the height as needed, e.g., 80vh for 80% of viewport height */
+  height: 100vh;
   display: flex;
-  align-items: center; /* Center items vertically */
-  padding: 0 2rem; /* Add horizontal padding for spacing */
-  /* background-image: url("../grey_hexagons_on_black_background.jpg");
-  background-size: cover; */
-  background-color: #080909a8;
+  align-items: center;
+  /* padding: 0 2rem; */
 }
 
 .about-me .container {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1200px; /* Limit container width */
-  align-items: flex-start; /* Center items vertically */
-  justify-content: space-between; /* Space out the image and content */
+  max-width: 1200px;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.about-me-left {
-  flex: 1; /* Take up available space */
-  display: flex;
-  align-items: center; /* Center image vertically */
-  justify-content: center; /* Center image horizontally */
+.about-me-left img {
+  width: 450px;
+  margin: 0 1.6rem;
+  height: auto;
+  height: 100%;
+  /* width: 500px; */
+  /* flex: 1; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: 0 1.6rem; */
 }
 
 .about-me-right {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align content to the start */
-  padding: 0 2rem; /* Optional: add padding */
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin: 0 1.6rem;
 }
 
 .about-me-right h2 {
@@ -40,11 +44,11 @@
 }
 
 .pic3 {
-  width: 80%; /* Make image responsive to container width */
-  height: 50%; /* Maintain aspect ratio */
-  max-width: 600px; /* Set a maximum width for the image */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 80%;
+  height: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .about-me-details {
@@ -88,4 +92,25 @@
   height: 2px;
   background-color: red;
   box-shadow: 0px 0 6px;
+}
+
+@media (max-width: 60rem) {
+  .about-me .container {
+    flex-direction: column;
+  }
+  .about-me-left {
+    display: none;
+  }
+
+  .about-me-right {
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 65rem) {
+  .about-me-left img {
+    width: 480px;
+  }
 }

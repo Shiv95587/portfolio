@@ -1,0 +1,6 @@
+@media (max-width: 75rem) {
+  .nav-elements div a {
+    margin: 0 8px;
+    /* display: none; */
+  }
+}

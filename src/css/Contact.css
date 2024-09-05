@@ -1,11 +1,112 @@
 #contact {
   width: 100vw;
   height: 100vh;
-  background-color: #080909a8;
 }
 
+#contact .container {
+}
 .contact-header {
   text-align: center;
   font-size: 3rem;
+  width: 100%;
   font-weight: 700;
+}
+
+.contact-details {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details-left {
+}
+
+.contact-details-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-name-group input,
+.form-email-group input,
+.form-message-group textarea {
+  padding-left: 8px;
+  width: 40%;
+  height: 44px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  width: 400px;
+  background-color: #262626;
+}
+
+.form-email-group input:focus,
+.form-message-group textarea:focus,
+.form-name-group input:focus {
+  outline: none;
+}
+
+.form-name-group input:focus {
+}
+
+.form-message-group textarea {
+  height: 196px;
+  padding: 8px;
+  font-size: 18px;
+  overflow: auto;
+  resize: none;
+}
+
+.form-message-group textarea::-webkit-scrollbar {
+  width: 8px;
+}
+.form-message-group textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.form-message-group textarea::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+.form-message-group textarea::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-group button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 14px 44px;
+  border-radius: 4px;
+  background-color: red;
+}
+
+.form-group button:hover {
+  transform: translateY(-10%);
+  box-shadow: 0px 2px 8px 2px rgba(255, 0, 0, 0.5);
+
+  transition: all 0.3s ease;
+}
+
+.footer {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
+  flex: 1;
+}
+
+.contact-links {
 }
